@@ -64,6 +64,9 @@ function isValidate(){
     confirmPass();
     
 }
+
+
+// indivisual functions for check validation for indivisual feild.
 function isValidFirstName(){
     let firstName = document.getElementById("firstname").value;
     if(firstName == '' || firstName.includes(" ")){
