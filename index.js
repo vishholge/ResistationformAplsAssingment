@@ -127,13 +127,15 @@ let noMatch = document.getElementById("doesnt-match-pass");
 const confirmPass = () => {
     let password = document.getElementById("password").value;
     let confirmPass = document.getElementById("confirm-password").value;
-    if(password === confirmPass){
-        matchPass.style.display = "block";
-        noMatch.style.display = "none";
-
-    }
-    else{
-        matchPass.style.display = "none";
-        noMatch.style.display = "block";
+    if(confirmPass != ''){
+        if(password === confirmPass){
+            matchPass.style.display = "block";
+            noMatch.style.display = "none";
+    
+        }
+        else{
+            matchPass.style.display = "none";
+            noMatch.style.display = "block";
+        }
     }
 }
